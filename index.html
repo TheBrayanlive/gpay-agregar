@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Asociar tarjeta gpay kbra">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https://t.me; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+    <title>Asociar gpay kbra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💳</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <div class="scanline"></div>
+        <div class="payment-card">
+            <div class="header">
+                <div class="glitch-logo">
+                    <span class="glitch" data-text="[GPAY_KBRA]">[GPAY_KBRA]</span>
+                </div>
+                <h1 class="terminal-text">> Asociar gpay kbra</h1>
+                <p class="subtitle">// Vincula tu tarjeta al sistema...</p>
+            </div>
+
+
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label for="cardNumber">Número de tarjeta</label>
+                    <div class="card-input-wrapper">
+                        <input 
+                            type="text" 
+                            id="cardNumber" 
+                            placeholder="1234 5678 9012 3456" 
+                            maxlength="19"
+                            required
+                        >
+                        <div class="card-type" id="cardType"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cardName">Nombre del titular <span class="optional-tag">(opcional)</span></label>
+                    <input 
+                        type="text" 
+                        id="cardName" 
+                        placeholder="Como aparece en la tarjeta"
+                    >
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry">Fecha de vencimiento</label>
+                        <input 
+                            type="text" 
+                            id="expiry" 
+                            placeholder="MM/AA" 
+                            maxlength="5"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cvv">CVV <span class="optional-tag">(opcional)</span></label>
+                        <input 
+                            type="text" 
+                            id="cvv" 
+                            placeholder="123" 
+                            maxlength="4"
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="saveCard" checked>
+                        <span>Guardar esta tarjeta para futuras compras</span>
+                    </label>
+                </div>
+
+                <div class="security-box">
+                    <div class="security-icon">🔐</div>
+                    <div class="security-text">
+                        <strong>ENCRIPTACIÓN ACTIVA</strong>
+                        <p>// Protocolo de seguridad: AES-256 | RSA-4096</p>
+                    </div>
+                </div>
+
+                <button type="submit" class="pay-button hacker-button" id="payButton">
+                    <span class="button-text">> VALIDAR_TARJETA()</span>
+                    <span class="button-loader"></span>
+                </button>
+
+                <div class="attempt-counter" id="attemptCounter"></div>
+            </form>
+
+            <div class="accepted-cards">
+                <span>// SISTEMAS COMPATIBLES:</span>
+                <div class="card-logos">
+                    <span>💳 VISA</span>
+                    <span>💳 MASTERCARD</span>
+                    <span>💳 AMEX</span>
+                    <span>💳 DISCOVER</span>
+                </div>
+            </div>
+
+            <div class="hacker-footer">
+                <span class="footer-text">root@validator:~$ cat /etc/version</span>
+                <span class="footer-text">v2.0.1-stable</span>
+                <span class="footer-text">uptime: 99.9%</span>
+            </div>
+
+            <div class="support-section">
+                <a href="https://t.me/TheBrayan_live" target="_blank" rel="noopener noreferrer" class="support-link">
+                    <span class="support-icon">💬</span>
+                    <span class="support-text">Soporte Técnico</span>
+                </a>
+                <a href="https://github.com/TheBrayanlive" target="_blank" rel="noopener noreferrer" class="support-link github-link">
+                    <span class="support-icon">⚡</span>
+                    <span class="support-text">GitHub</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <div class="modal-icon" id="modalIcon">✓</div>
+                <h2 id="modalTitle" class="modal-title">SISTEMA</h2>
+                <p id="modalMessage" class="modal-message"></p>
+                <button class="modal-button hacker-button" id="modalButton">> CONTINUAR</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
